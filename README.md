@@ -12,6 +12,8 @@ A modern social media platform built with React, featuring an intuitive UI and e
 
 </div>
 
+** https://time-loop-psi.vercel.app
+
 ## ✨ Features
 
 - 🏠 **Home Feed** - Browse and interact with posts
@@ -59,6 +61,7 @@ A modern social media platform built with React, featuring an intuitive UI and e
    ```
 
    After running the development server, click on the Network link that appears in your terminal (e.g., http://192.128.3.8:5177/)
+
 
 ## 📁 Project Structure
 
