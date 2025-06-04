@@ -12,7 +12,8 @@ A modern social media platform built with React, featuring an intuitive UI and e
 
 </div>
 
-** https://time-loop-psi.vercel.app
+## 🛜 Live link 
+- https://time-loop-psi.vercel.app
 
 ## ✨ Features
 
