@@ -1,0 +1,189 @@
+.Account-main{
+    margin: 10px auto;
+    max-width: 600px;
+    padding: 0 20px;
+
+}
+
+.upparmain{
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 100px;
+
+}
+
+.profilediv{
+    margin: 0;
+}
+
+.profile{
+
+
+    width:180px;
+    height: 180px;
+    border-radius: 50%;
+
+}
+
+.threediv{
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.editbutton,
+.viewbutton{
+    
+    padding: 6px 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    background-color: #eee;
+    color: #262626;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+
+}
+
+.editbutton:hover,
+.viewbutton:hover{
+  background-color: #ddd;
+}
+
+.firstdiv{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+.seconddev{
+    color: white;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 10px;
+    padding: 0;
+    flex-wrap: wrap;
+    font-size: 17px;
+}
+
+.thirddev{
+    color: white;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 16px;
+}
+
+.name{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.highlights-container {
+
+
+  gap: 50px;
+  display: flex;
+  overflow-x: auto; 
+  padding: 60px 0;
+  margin-bottom: 20px;
+
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.highlights-container::-webkit-scrollbar {
+  display: none;  
+}
+
+.highlight-item {
+    padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px; 
+  flex-shrink: 0; 
+  text-align: center;
+}
+
+.highlight-img-container {
+  width: 70px; 
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ddd; 
+}
+
+.highlight-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.highlight-label {
+  margin-top: 8px; 
+  font-size: 12px;
+  color: white; 
+  word-break: break-word; 
+  max-width: 80px; 
+}
+
+.profile-tabs {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #d2c5c5; 
+  margin-top: 20px; 
+}
+
+.tab-button {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0; 
+  color: #cbc1c1; 
+  font-size: 12px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.tab-button i {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.tab-button.active {
+  color: #ffffff; 
+  border-top: 2px solid #ffffff; 
+  margin-top: -2px; 
+}
+
+.tab-button:hover {
+  color: #ffffff; 
+}
+
+.SearchPost{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 30px; 
+
+}

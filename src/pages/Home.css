@@ -1,0 +1,102 @@
+.post-container {
+  background-color: black;
+  border: 1px solid #262626;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.uppar {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+}
+
+.uppar img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  outline-style: double;
+  outline-color: darkcyan;
+}
+
+.uppar h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.uppar h3:nth-of-type(2) {
+  font-size: 17px;
+  color: #a8a8a8;
+  font-weight: 400;
+  margin-left: -5px;
+}
+
+.uppar button {
+  margin-left: auto;
+  background-color: transparent;
+  color: #0095f6;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.post-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-actions {
+  display: flex;
+  padding: 10px 15px;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.icon-group i {
+  font-size: 20px;
+  color: #a8a8a8;
+}
+
+.icon-group .liked {
+  color: red;
+}
+
+.icon-group span {
+  font-size: 12px;
+  color: white;
+}
+
+.title {
+  padding: 0 15px 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.title h4 {
+  font-weight: 600;
+  margin-right: 5px;
+  display: inline;
+}
+
+.title p {
+  display: inline;
+  margin: 0;
+}
+
