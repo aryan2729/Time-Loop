@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoading(false);
-    }, 3500); // Wait for fadeOut animation to complete
+    }, 3500); 
 
     return () => clearTimeout(timer);
   }, []);
