@@ -1,5 +1,6 @@
 import { BrowserRouter , Router, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Search  from './pages/Search';
@@ -30,6 +31,7 @@ function App() {
   }
 
   return (
+    <>
 
     <BrowserRouter>    
         <Routes>
@@ -42,6 +44,10 @@ function App() {
           </Route>
         </Routes>
     </BrowserRouter>
+
+    <Analytics />
+
+    </>
 
   );
 }
