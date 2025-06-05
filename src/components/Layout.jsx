@@ -1,4 +1,5 @@
 import { Outlet, useNavigate } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/next';
 import './Layout.css';
 
 function Layout() {
@@ -30,6 +31,8 @@ function Layout() {
           <span>Account</span>
         </button>
       </footer>
+
+       <Analytics />
     </div>
   );
 }
