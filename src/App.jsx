@@ -1,4 +1,4 @@
-import { BrowserRouter , Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter , Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import Layout from './components/Layout';
@@ -9,31 +9,38 @@ import Reels from './pages/Reels';
 import Error from './pages/Error';
 import './App.css';
 
-function App() {
-  const [isLoading, setIsLoading] = useState(true);
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3500);
-  }, []);
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
-  
-  if (isLoading) {
-    return (
-      <div className="loading-screen">
-        <div className="loading-animation">
-          <img src="./assets/TimeLoop1.png" alt="logo" />
-        </div>
-      </div>
-    );
-  }
+  return null;
+}
+
+function App() {
+  const [showLoading, setShowLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoading(false);
+    }, 3500); // Wait for fadeOut animation to complete
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
-
-    <BrowserRouter>    
+      {showLoading && (
+        <div className="loading-screen">
+          <div className="loading-animation">
+            <img src="./assets/TimeLoop1.png" alt="logo" />
+          </div>
+        </div>
+      )}
+      <BrowserRouter>    
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -43,12 +50,9 @@ function App() {
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>
-    </BrowserRouter>
-
-    <Analytics />
-
+      </BrowserRouter>
+      <Analytics />
     </>
-
   );
 }
 
